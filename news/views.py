@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+from .forms import CategoryForm
 from .models import News
 
 
@@ -10,3 +11,14 @@ def home(request):
 def news_details(request, id):
     news_item = get_object_or_404(News, id=id)
     return render(request, 'news_details.html', {'news_item': news_item})
+
+
+def categories_form(request):
+    if request.method == 'POST':
+        form = CategoryForm(request.POST)
+        if form.is_valid():
+            return redirect('home-page')
+    else:
+        form = CategoryForm()
+
+    return render(request, 'categories_form.html', {'form': form})
