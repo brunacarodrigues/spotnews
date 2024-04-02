@@ -1,10 +1,2 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Projeto do módulo Eletiva Python.
+Desenvolvimento de uma aplicação web utilizando Django, incluindo a criação de modelos para representar os dados (Category, User e News), a implementação de templates HTML para exibir esses dados (Página Inicial, Detalhes da Notícia, Formulário de Nova Categoria e Formulário de Nova Notícia), e a definição de rotas para fornecer uma API RESTful utilizando Django Rest Framework (DRF). Além da criação de uma rota adicional para manipular notícias com o DRF.
